@@ -1,0 +1,75 @@
+/* Estilo para a página do Dashboard */
+.dashboard-page {
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    padding-top: 20px;
+  }
+  
+  /* Seção de boas-vindas */
+  .welcome-section h1 {
+    font-size: 2.5rem;
+    color: #343a40;
+  }
+  
+  .welcome-section p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  /* Estilo dos Cards do Dashboard */
+  .dashboard-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .dashboard-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .dashboard-card .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .dashboard-card .card-text {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  .dashboard-card .btn {
+    margin-top: 15px;
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dashboard-card .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Espaçamento entre os cards */
+  .mb-4 {
+    margin-bottom: 1.5rem !important;
+  }
+  
+  /* Centralizando o botão de logout */
+  .text-center .logout-btn {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+  }
+  
+  /* Estilo do Botão de Logout */
+.dashboard-page .btn-danger {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.sair {
+    max-width: 100px;
+}
+  

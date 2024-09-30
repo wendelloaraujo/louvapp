@@ -1,0 +1,93 @@
+/* Importando a fonte moderna Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/* Aplicando a nova fonte */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Página de Cadastro */
+.signup-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f5f5f5; /* Fundo cinza suave */
+  padding: 20px;
+}
+
+/* Caixa de Cadastro */
+.signup-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Título */
+h2 {
+  color: #343a40;
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* Estilo para os Botões */
+button {
+  background-color: #007bff;
+  border: none;
+  padding: 12px;
+  font-size: 1.1rem;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover no Botão */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para os Campos de Entrada */
+.form-control {
+  padding: 12px;
+  font-size: 1rem;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Links de Navegação */
+.login-link {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.login-link:hover {
+  color: #0056b3;
+}
+
+/* Texto do Link de Login */
+.sign-up-text {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+/* Alerta de Erro */
+.alert {
+  margin-top: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .signup-box {
+    padding: 20px;
+    max-width: 95%; /* Em dispositivos menores, a caixa pode ter até 95% da largura */
+  }
+}

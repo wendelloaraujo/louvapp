@@ -1,0 +1,124 @@
+/* Reinicializando o Box-Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Hero Container com Gradiente de Fundo */
+.hero-container {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('../../Imagens/Home1.jpg') no-repeat center center;
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Sobreposição */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+/* Conteúdo do Hero */
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Título e Subtítulo Animados */
+.animated-title {
+  animation: fadeInDown 1s ease-in-out;
+  font-size: 3rem;
+}
+
+.animated-subtitle {
+  animation: fadeInUp 1.5s ease-in-out;
+  font-size: 1.5rem;
+}
+
+.animated-button {
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Estilos dos Botões */
+.button-group .btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.button-group .btn-primary {
+  background-color: #007bff;
+  border: none;
+  margin-right: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-group .btn-primary:hover {
+  background-color: #0056b3;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.button-group .btn-light {
+  color: #333;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-group .btn-light:hover {
+  color: #fff;
+  background-color: #333;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Seção de Benefícios */
+.benefits-section {
+  padding: 50px 0;
+}
+
+.benefit {
+  text-align: center;
+}
+
+.benefit-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+.benefits-section h3 {
+  font-size: 1.8rem;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.benefits-section p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 20px;
+  }
+  
+  .animated-title {
+    font-size: 2.5rem;
+  }
+
+  .animated-subtitle {
+    font-size: 1.2rem;
+  }
+}

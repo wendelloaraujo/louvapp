@@ -1,0 +1,70 @@
+/* Estilos globais para o layout */
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Navbar Customizada */
+  .navbar-custom {
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-custom .navbar-brand {
+    font-weight: bold;
+    color: #007bff;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-custom .nav-link {
+    color: #333;
+    margin-right: 15px;
+    font-size: 1.1rem;
+    transition: color 0.2s ease;
+  }
+  
+  .navbar-custom .nav-link:hover {
+    color: #007bff;
+  }
+  
+  .navbar-custom .nav-link.active {
+    color: #007bff;
+    font-weight: 600;
+  }
+  
+  /* Footer Estilizado */
+  .footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .footer-text {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  /* Espaçamento do Conteúdo */
+  .content {
+    flex-grow: 1;
+    padding-top: 15px;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .navbar-custom .nav-link {
+      font-size: 1rem;
+      margin-right: 10px;
+    }
+  
+    .footer-text {
+      font-size: 0.8rem;
+    }
+
+    .content {
+        padding-top: 80px; /* Aumenta o espaçamento para mobile se necessário */
+      }
+  }
